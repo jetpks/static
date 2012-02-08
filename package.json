@@ -1,0 +1,18 @@
+{
+  "author": "Eric Jacobs <eric@chomp.us> (http://techosaur.us/)",
+  "name": "static.js",
+  "description": "Static file server on node.js.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/techosaurus/static.js.git"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "~0.6.7"
+  },
+  "dependencies": {
+    "connect": "~1.8.5"
+  },
+  "devDependencies": {}
+}
