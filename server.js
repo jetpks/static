@@ -12,7 +12,8 @@
   }
 
   if(typeof process.argv[3] !== 'undefined' && fs.statSync(process.argv[3]).isDirectory()) {
-    if(process.argv[3].substring(0,1) == '/') {
+    if(process.argv[3].substring(0,1) == '/'
+    ||(process.platform === 'win32' && /[A-Z]:/.test(process.argv[3].substring(0,2)))) {
       path = process.argv[3];
     } else {
       path = __dirname + '/' + process.argv[3];
